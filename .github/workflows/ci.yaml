@@ -1,5 +1,15 @@
 name: CI
-on: [push, pull_request]
+
+on: 
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
