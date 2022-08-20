@@ -14,3 +14,12 @@ npm i --save-dev supertest mocha chai @babel/cli @babel/core @babel/node @babel/
 
 https://www.chaijs.com/api/bdd/#method_empty
 
+
+# To run the tests
+
+npm install
+npm test
+(Actual command: npx mocha --timeout 5000 --reporter mochawesome)
+
+
+
