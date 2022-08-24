@@ -2,16 +2,20 @@ import supertest from "supertest";
 const request = supertest('https://gorest.co.in/public-api/');
 import { expect } from 'chai';
 
-describe('Get Users suite', () =>{
+describe('Get Users suite', async () =>{
+
+let userId = null;
 
 describe('', () =>{
-    it('Get all users', ()=>{
-        request.get('/users').end((err,res) => {
+    
+    it('Get all users', async ()=>{
+        const res = await request.get('/users').then((res) => {
             // console.log(err);
             // console.log(res.body);
             expect(res.body.data).to.not.be.empty;
             
-
+            userId = res.body.data[0].id;
+            // console.log('=======> '+userId);
             //for a diff api https://gorest.co.in/public/v2/users
             //if response is array
             // expect(res.body.length).to.be.greaterThan(0);
@@ -22,21 +26,22 @@ describe('', () =>{
     });
 
 
-    it('Get specific user', ()=>{
-        request.get('/users/4108').end((err,res) => {
-            // console.log(res.body);
+    it('Get specific user', async ()=>{
+        const res = await request.get('/users/'+userId).then((res) => {
+            // console.log(res);
+            // console.log(res.);
             expect(res.body.data).to.not.be.empty;
-            expect(res.body.data.id).to.equal(4108);
+            expect(res.body.data.id).to.equal(userId);
 
         })
 
     });
 
 
-    it('Get with query params', ()=>{
+    it('Get with query params', async ()=>{
         const url = '/users?page=5&gender=female&status=active';
 
-        request.get(url).end((err,res) => {
+        const res = await request.get(url).then((res) => {
             // console.log(res.body);
             expect(res.body.data).to.not.be.empty;
             res.body.data.forEach(element => {
