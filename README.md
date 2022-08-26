@@ -17,9 +17,9 @@ https://www.chaijs.com/api/bdd/#method_empty
 
 # To run the tests
 
-npm install
-npm test
-(Actual command: npx mocha --timeout 5000 --reporter mochawesome)
+- npm install
+- npm test
+- (Actual command: npx mocha --timeout 5000 --reporter mochawesome)
 
 
 
