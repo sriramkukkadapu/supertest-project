@@ -5,9 +5,9 @@
     "passes": 19,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-02T01:08:55.174Z",
-    "end": "2024-02-02T01:09:11.267Z",
-    "duration": 16093,
+    "start": "2024-02-03T01:07:40.684Z",
+    "end": "2024-02-03T01:07:57.052Z",
+    "duration": 16368,
     "testsRegistered": 19,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "db0f4756-4167-4cf0-b045-0d9e98ef7e24",
+      "uuid": "666d394b-27da-4d80-8bde-d59ac476af2a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "79c76298-5599-441d-86a1-62570ccb8080",
+          "uuid": "1bf18eeb-ecd8-4d36-88c3-f7bf3aefe546",
           "title": "Env variable Token",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/10_EnvVariableExample.js",
           "file": "/test/10_EnvVariableExample.js",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "9d631de1-3a8b-4696-90a2-2434f9ddf4f9",
+              "uuid": "a9b6a23f-496d-47a3-b73b-b555a3a3fe5e",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/10_EnvVariableExample.js",
               "file": "/test/10_EnvVariableExample.js",
@@ -47,7 +47,7 @@
                   "title": "Env Token - Create a user",
                   "fullTitle": "Env variable Token  Env Token - Create a user",
                   "timedOut": false,
-                  "duration": 875,
+                  "duration": 940,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -56,20 +56,20 @@
                   "context": null,
                   "code": "var email = _faker.faker.internet.email();\nvar data = {\n  email: email,\n  name: _faker.faker.internet.userName(),\n  gender: 'male',\n  status: 'inactive'\n};\nreturn _common[\"default\"].post('/users').set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  // console.log(res.body);\n  (0, _chai.expect)(res.body.data.email).to.eq(email);\n  (0, _chai.expect)(res.body.data.status).to.eq('inactive');\n  (0, _chai.expect)(res.body.data.gender).to.eq('male');\n  // expect(res.body.data.id).to.equal(4108);\n  // data.email = \"invalid\";\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
                   "err": {},
-                  "uuid": "d1ee3362-018e-41fd-bd36-77211ca85a8a",
-                  "parentUUID": "9d631de1-3a8b-4696-90a2-2434f9ddf4f9",
+                  "uuid": "cfd8f06d-8491-457e-ab05-dab928158cec",
+                  "parentUUID": "a9b6a23f-496d-47a3-b73b-b555a3a3fe5e",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "d1ee3362-018e-41fd-bd36-77211ca85a8a"
+                "cfd8f06d-8491-457e-ab05-dab928158cec"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 875,
+              "duration": 940,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -85,7 +85,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "4469a26d-b14c-426b-a55e-603c77e96955",
+          "uuid": "de7ace2f-ee0f-4f36-93eb-cd548b280828",
           "title": "Get Users suite",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/1_GetUsers.js",
           "file": "/test/1_GetUsers.js",
@@ -94,7 +94,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "932a7139-7160-4ac5-9bee-ba1daf356580",
+              "uuid": "d5846c6b-c202-480d-9a2b-46f85c5a7189",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/1_GetUsers.js",
               "file": "/test/1_GetUsers.js",
@@ -105,7 +105,7 @@
                   "title": "Get all users",
                   "fullTitle": "Get Users suite  Get all users",
                   "timedOut": false,
-                  "duration": 774,
+                  "duration": 320,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -114,8 +114,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "f69a4196-ceba-4080-b441-919c04b86216",
-                  "parentUUID": "932a7139-7160-4ac5-9bee-ba1daf356580",
+                  "uuid": "983de7ed-255b-4489-b218-064fbbb3af2e",
+                  "parentUUID": "d5846c6b-c202-480d-9a2b-46f85c5a7189",
                   "isHook": false,
                   "skipped": false
                 },
@@ -123,7 +123,7 @@
                   "title": "Get specific user",
                   "fullTitle": "Get Users suite  Get specific user",
                   "timedOut": false,
-                  "duration": 746,
+                  "duration": 779,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -132,8 +132,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "f08ad9ec-3f65-4b22-92b2-ee2003a570ff",
-                  "parentUUID": "932a7139-7160-4ac5-9bee-ba1daf356580",
+                  "uuid": "181365a3-bb39-4b7e-a4cd-cc4517fa4b47",
+                  "parentUUID": "d5846c6b-c202-480d-9a2b-46f85c5a7189",
                   "isHook": false,
                   "skipped": false
                 },
@@ -141,7 +141,7 @@
                   "title": "Get with query params",
                   "fullTitle": "Get Users suite  Get with query params",
                   "timedOut": false,
-                  "duration": 315,
+                  "duration": 343,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -150,22 +150,22 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "a07505cb-47ea-4137-9e4b-1438c6117220",
-                  "parentUUID": "932a7139-7160-4ac5-9bee-ba1daf356580",
+                  "uuid": "b48e951d-9fb5-4889-99a0-c15ff2e0eed8",
+                  "parentUUID": "d5846c6b-c202-480d-9a2b-46f85c5a7189",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "f69a4196-ceba-4080-b441-919c04b86216",
-                "f08ad9ec-3f65-4b22-92b2-ee2003a570ff",
-                "a07505cb-47ea-4137-9e4b-1438c6117220"
+                "983de7ed-255b-4489-b218-064fbbb3af2e",
+                "181365a3-bb39-4b7e-a4cd-cc4517fa4b47",
+                "b48e951d-9fb5-4889-99a0-c15ff2e0eed8"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1835,
+              "duration": 1442,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -181,7 +181,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "28d44ef8-3914-4ff6-a9c3-65d86d494e78",
+          "uuid": "b98aea04-84a9-4c73-9aa4-4e84ccc3de9a",
           "title": "Post user suite",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/2_PostUsers.js",
           "file": "/test/2_PostUsers.js",
@@ -190,7 +190,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "fdd860d6-5d68-40e9-8251-89a214db2704",
+              "uuid": "05b3ec8b-8f72-4419-a625-5cd0cc5fc733",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/2_PostUsers.js",
               "file": "/test/2_PostUsers.js",
@@ -201,7 +201,7 @@
                   "title": "Post - Create a user",
                   "fullTitle": "Post user suite  Post - Create a user",
                   "timedOut": false,
-                  "duration": 827,
+                  "duration": 849,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -210,20 +210,20 @@
                   "context": null,
                   "code": "var email = _faker.faker.internet.email();\nvar data = {\n  email: email,\n  name: _faker.faker.internet.userName(),\n  gender: 'male',\n  status: 'inactive'\n};\nreturn request.post('/users').set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  // console.log(res.body);\n  (0, _chai.expect)(res.body.data.email).to.eq(email);\n  (0, _chai.expect)(res.body.data.status).to.eq('inactive');\n  (0, _chai.expect)(res.body.data.gender).to.eq('male');\n  // expect(res.body.data.id).to.equal(4108);\n  // data.email = \"invalid\";\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
                   "err": {},
-                  "uuid": "b955b530-c6ac-4512-874f-0db7c6cc99d5",
-                  "parentUUID": "fdd860d6-5d68-40e9-8251-89a214db2704",
+                  "uuid": "a88527de-24d0-4ac0-8f28-f2803ee999d7",
+                  "parentUUID": "05b3ec8b-8f72-4419-a625-5cd0cc5fc733",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "b955b530-c6ac-4512-874f-0db7c6cc99d5"
+                "a88527de-24d0-4ac0-8f28-f2803ee999d7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 827,
+              "duration": 849,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -239,7 +239,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "0215594e-8612-4a58-b240-d0f251ebe39c",
+          "uuid": "5b1bb542-c286-4592-8d40-f4e4d703322e",
           "title": "Put user suite ",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/3_PutUsers.js",
           "file": "/test/3_PutUsers.js",
@@ -248,7 +248,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "babb8d94-5379-4a7c-bd04-287d4c0609fc",
+              "uuid": "2c5e2c60-e8fe-4e82-b552-061d5438d596",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/3_PutUsers.js",
               "file": "/test/3_PutUsers.js",
@@ -259,7 +259,7 @@
                   "title": "Post - Create a user",
                   "fullTitle": "Put user suite   Post - Create a user",
                   "timedOut": false,
-                  "duration": 812,
+                  "duration": 886,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -268,8 +268,8 @@
                   "context": null,
                   "code": "var email = _faker.faker.internet.email();\nvar data = {\n  email: email,\n  name: _faker.faker.internet.userName(),\n  gender: 'male',\n  status: 'inactive'\n};\nreturn request.post('/users').set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  userId = res.body.data.id;\n});",
                   "err": {},
-                  "uuid": "7b8ab232-1f2c-4d31-ae98-415a55029dcb",
-                  "parentUUID": "babb8d94-5379-4a7c-bd04-287d4c0609fc",
+                  "uuid": "b0ed4454-1819-4768-964b-999370228294",
+                  "parentUUID": "2c5e2c60-e8fe-4e82-b552-061d5438d596",
                   "isHook": false,
                   "skipped": false
                 },
@@ -277,7 +277,7 @@
                   "title": "Put - Update a user",
                   "fullTitle": "Put user suite   Put - Update a user",
                   "timedOut": false,
-                  "duration": 788,
+                  "duration": 859,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -286,21 +286,21 @@
                   "context": null,
                   "code": "var email = _faker.faker.internet.email();\nvar data = {\n  email: email,\n  name: _faker.faker.internet.userName(),\n  gender: 'female',\n  status: 'active'\n};\nreturn request.put('/users/' + userId).set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  // console.log(res.body);\n  // expect(res.body.data.email).to.eq(email);\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
                   "err": {},
-                  "uuid": "5d935fa1-e8e6-44db-a3da-2ffeb2fb432d",
-                  "parentUUID": "babb8d94-5379-4a7c-bd04-287d4c0609fc",
+                  "uuid": "c6644d31-6354-4f9f-879c-5666fb60ed11",
+                  "parentUUID": "2c5e2c60-e8fe-4e82-b552-061d5438d596",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "7b8ab232-1f2c-4d31-ae98-415a55029dcb",
-                "5d935fa1-e8e6-44db-a3da-2ffeb2fb432d"
+                "b0ed4454-1819-4768-964b-999370228294",
+                "c6644d31-6354-4f9f-879c-5666fb60ed11"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1600,
+              "duration": 1745,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -316,7 +316,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "9cee5c85-b2da-4476-b417-030654ebcdc9",
+          "uuid": "0b6550f7-3990-42b8-82c7-1b8f2f30e648",
           "title": "Delete user suite ",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/4_DeleteUser.js",
           "file": "/test/4_DeleteUser.js",
@@ -325,7 +325,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "d65cefb7-f7fe-4d4d-b8ab-43e8e1006636",
+              "uuid": "26773917-75dc-4654-a55c-ff5576e0af8d",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/4_DeleteUser.js",
               "file": "/test/4_DeleteUser.js",
@@ -336,7 +336,7 @@
                   "title": "Post - Create a user",
                   "fullTitle": "Delete user suite   Post - Create a user",
                   "timedOut": false,
-                  "duration": 842,
+                  "duration": 867,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -345,8 +345,8 @@
                   "context": null,
                   "code": "var email = _faker.faker.internet.email();\nvar data = {\n  email: email,\n  name: _faker.faker.internet.userName(),\n  gender: 'male',\n  status: 'inactive'\n};\nreturn request.post('/users').set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  userId = res.body.data.id;\n});",
                   "err": {},
-                  "uuid": "00b1c13d-bd48-4202-a5a8-f493135e2cca",
-                  "parentUUID": "d65cefb7-f7fe-4d4d-b8ab-43e8e1006636",
+                  "uuid": "8cc2c2c4-fe0a-4bd9-8642-17318bae77e2",
+                  "parentUUID": "26773917-75dc-4654-a55c-ff5576e0af8d",
                   "isHook": false,
                   "skipped": false
                 },
@@ -354,7 +354,7 @@
                   "title": "Delete - delete a user",
                   "fullTitle": "Delete user suite   Delete - delete a user",
                   "timedOut": false,
-                  "duration": 876,
+                  "duration": 907,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -363,21 +363,21 @@
                   "context": null,
                   "code": "return request[\"delete\"]('/users/' + userId).set(\"Authorization\", \"Bearer \".concat(TOKEN)).then(function (res) {\n  // console.log(res.body);\n  // verify response has no error msg in data field\n  (0, _chai.expect)(res.body.data).to.eq(null);\n  // expect(res.body.data).to.deep.include(data);\n});",
                   "err": {},
-                  "uuid": "ef64cf70-d6a1-46ac-b44e-a3bd58adb2a4",
-                  "parentUUID": "d65cefb7-f7fe-4d4d-b8ab-43e8e1006636",
+                  "uuid": "4180a1b2-cc18-44c4-9a9f-7e09e0f7d8e0",
+                  "parentUUID": "26773917-75dc-4654-a55c-ff5576e0af8d",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "00b1c13d-bd48-4202-a5a8-f493135e2cca",
-                "ef64cf70-d6a1-46ac-b44e-a3bd58adb2a4"
+                "8cc2c2c4-fe0a-4bd9-8642-17318bae77e2",
+                "4180a1b2-cc18-44c4-9a9f-7e09e0f7d8e0"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1718,
+              "duration": 1774,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -393,7 +393,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "c730a411-2264-4b4f-83b9-79d1ca0562f5",
+          "uuid": "1e4c73e6-da69-4479-8e1b-7972a7004038",
           "title": "Post user suite - Async Await example",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/5_CreateBlogPost_AsyncAwait copy.js",
           "file": "/test/5_CreateBlogPost_AsyncAwait copy.js",
@@ -402,7 +402,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "3e5c3eb5-001a-4680-945e-741f984efe64",
+              "uuid": "dfc895b1-29b8-45ae-b7d2-c4859fdfc96a",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/5_CreateBlogPost_AsyncAwait copy.js",
               "file": "/test/5_CreateBlogPost_AsyncAwait copy.js",
@@ -413,7 +413,7 @@
                   "title": "First - Create a user",
                   "fullTitle": "Post user suite - Async Await example  First - Create a user",
                   "timedOut": false,
-                  "duration": 799,
+                  "duration": 829,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -422,8 +422,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "650916b5-7d63-4e73-9a58-86c130e9a56b",
-                  "parentUUID": "3e5c3eb5-001a-4680-945e-741f984efe64",
+                  "uuid": "99230021-421c-4e4e-9610-42b2c1ee20af",
+                  "parentUUID": "dfc895b1-29b8-45ae-b7d2-c4859fdfc96a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -431,7 +431,7 @@
                   "title": "Post - Create a Blog post",
                   "fullTitle": "Post user suite - Async Await example  Post - Create a Blog post",
                   "timedOut": false,
-                  "duration": 801,
+                  "duration": 869,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -440,8 +440,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "8fb69af5-1f23-4e45-a843-fcb9996b4473",
-                  "parentUUID": "3e5c3eb5-001a-4680-945e-741f984efe64",
+                  "uuid": "4f4683cd-ea46-4e90-811a-2389f2581797",
+                  "parentUUID": "dfc895b1-29b8-45ae-b7d2-c4859fdfc96a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -449,7 +449,7 @@
                   "title": "Get - Post with id",
                   "fullTitle": "Post user suite - Async Await example  Get - Post with id",
                   "timedOut": false,
-                  "duration": 843,
+                  "duration": 838,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -458,22 +458,22 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "2533d3f9-ffc9-4d3d-a31a-2fda06b4717d",
-                  "parentUUID": "3e5c3eb5-001a-4680-945e-741f984efe64",
+                  "uuid": "2a61b6df-60f4-4311-b1d1-279bb92342d7",
+                  "parentUUID": "dfc895b1-29b8-45ae-b7d2-c4859fdfc96a",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "650916b5-7d63-4e73-9a58-86c130e9a56b",
-                "8fb69af5-1f23-4e45-a843-fcb9996b4473",
-                "2533d3f9-ffc9-4d3d-a31a-2fda06b4717d"
+                "99230021-421c-4e4e-9610-42b2c1ee20af",
+                "4f4683cd-ea46-4e90-811a-2389f2581797",
+                "2a61b6df-60f4-4311-b1d1-279bb92342d7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 2443,
+              "duration": 2536,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -489,7 +489,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "dda3a4a1-434d-48c9-8377-4f1c7d3f0d52",
+          "uuid": "1193dc3e-684a-4bb8-8dac-6e195d83ad43",
           "title": "Before hook example, Post user suite",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/6_HooksEx_AsyncAwait copy.js",
           "file": "/test/6_HooksEx_AsyncAwait copy.js",
@@ -498,7 +498,7 @@
               "title": "\"before all\" hook in \"Before hook example, Post user suite\"",
               "fullTitle": "Before hook example, Post user suite \"before all\" hook in \"Before hook example, Post user suite\"",
               "timedOut": false,
-              "duration": 837,
+              "duration": 859,
               "state": null,
               "speed": null,
               "pass": false,
@@ -507,8 +507,8 @@
               "context": null,
               "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
               "err": {},
-              "uuid": "c4e80dbf-ac7f-4c73-b3ad-f985ad2175e5",
-              "parentUUID": "dda3a4a1-434d-48c9-8377-4f1c7d3f0d52",
+              "uuid": "50e0f8aa-3dac-4f13-8a30-ee91d6f4284c",
+              "parentUUID": "1193dc3e-684a-4bb8-8dac-6e195d83ad43",
               "isHook": true,
               "skipped": false
             }
@@ -517,7 +517,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "1072b809-e84a-46cf-9adc-3ea28b5f0350",
+              "uuid": "b90ffc00-fb3c-4e33-9fa3-d4fbd79efb64",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/6_HooksEx_AsyncAwait copy.js",
               "file": "/test/6_HooksEx_AsyncAwait copy.js",
@@ -528,7 +528,7 @@
                   "title": "Post - Create a Blog post",
                   "fullTitle": "Before hook example, Post user suite  Post - Create a Blog post",
                   "timedOut": false,
-                  "duration": 877,
+                  "duration": 400,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -537,8 +537,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "5fe9a954-8144-46a1-83e0-58c5c8b4c19f",
-                  "parentUUID": "1072b809-e84a-46cf-9adc-3ea28b5f0350",
+                  "uuid": "bcb486f9-9dab-4ada-a7e8-091a820a34f2",
+                  "parentUUID": "b90ffc00-fb3c-4e33-9fa3-d4fbd79efb64",
                   "isHook": false,
                   "skipped": false
                 },
@@ -546,7 +546,7 @@
                   "title": "Get - Post with id",
                   "fullTitle": "Before hook example, Post user suite  Get - Post with id",
                   "timedOut": false,
-                  "duration": 761,
+                  "duration": 825,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -555,21 +555,21 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "443d0c92-2339-4ef0-a851-e50247bf5cd7",
-                  "parentUUID": "1072b809-e84a-46cf-9adc-3ea28b5f0350",
+                  "uuid": "66539912-4614-4536-b7d8-d126316c613e",
+                  "parentUUID": "b90ffc00-fb3c-4e33-9fa3-d4fbd79efb64",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "5fe9a954-8144-46a1-83e0-58c5c8b4c19f",
-                "443d0c92-2339-4ef0-a851-e50247bf5cd7"
+                "bcb486f9-9dab-4ada-a7e8-091a820a34f2",
+                "66539912-4614-4536-b7d8-d126316c613e"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1638,
+              "duration": 1225,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -585,7 +585,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "cf1d35ca-e06e-4146-822c-dd676c41d059",
+          "uuid": "a2d231d6-896f-49fa-9270-57f8b3ff9e09",
           "title": "Helper Method, Post user suite",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/7_HelperMethod_Example.js",
           "file": "/test/7_HelperMethod_Example.js",
@@ -594,7 +594,7 @@
               "title": "\"before all\" hook in \"Helper Method, Post user suite\"",
               "fullTitle": "Helper Method, Post user suite \"before all\" hook in \"Helper Method, Post user suite\"",
               "timedOut": false,
-              "duration": 857,
+              "duration": 852,
               "state": null,
               "speed": null,
               "pass": false,
@@ -603,8 +603,8 @@
               "context": null,
               "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
               "err": {},
-              "uuid": "08181481-807e-4671-9bae-0a19c6a3c106",
-              "parentUUID": "cf1d35ca-e06e-4146-822c-dd676c41d059",
+              "uuid": "c868f3de-61b3-42b7-87e0-db27f9655f4a",
+              "parentUUID": "a2d231d6-896f-49fa-9270-57f8b3ff9e09",
               "isHook": true,
               "skipped": false
             }
@@ -613,7 +613,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "e09ec9d3-6a65-4e64-ac6e-2f38686a91a9",
+              "uuid": "b4549e87-5908-421f-970d-dea032c92d19",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/7_HelperMethod_Example.js",
               "file": "/test/7_HelperMethod_Example.js",
@@ -624,7 +624,7 @@
                   "title": "Post - Create a Blog post",
                   "fullTitle": "Helper Method, Post user suite  Post - Create a Blog post",
                   "timedOut": false,
-                  "duration": 372,
+                  "duration": 884,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -633,8 +633,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "380c25e5-927b-4f3f-8db6-a7387250aa37",
-                  "parentUUID": "e09ec9d3-6a65-4e64-ac6e-2f38686a91a9",
+                  "uuid": "e7d2e5cb-a17b-490e-85ad-3425412fc587",
+                  "parentUUID": "b4549e87-5908-421f-970d-dea032c92d19",
                   "isHook": false,
                   "skipped": false
                 },
@@ -642,7 +642,7 @@
                   "title": "Get - Post with id",
                   "fullTitle": "Helper Method, Post user suite  Get - Post with id",
                   "timedOut": false,
-                  "duration": 755,
+                  "duration": 804,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -651,21 +651,21 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "b1e924bf-baea-49e6-8ae9-666002eedad9",
-                  "parentUUID": "e09ec9d3-6a65-4e64-ac6e-2f38686a91a9",
+                  "uuid": "f7cf2196-1b65-4a2d-9e51-e436c99b2dc7",
+                  "parentUUID": "b4549e87-5908-421f-970d-dea032c92d19",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "380c25e5-927b-4f3f-8db6-a7387250aa37",
-                "b1e924bf-baea-49e6-8ae9-666002eedad9"
+                "e7d2e5cb-a17b-490e-85ad-3425412fc587",
+                "f7cf2196-1b65-4a2d-9e51-e436c99b2dc7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1127,
+              "duration": 1688,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -681,7 +681,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "06083177-7bac-4333-ad6e-702ba74f5d20",
+          "uuid": "66a6f11c-32c2-48f2-a38e-46412e020919",
           "title": "Negative Tests suite",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/8_NegativeTest_Post.js",
           "file": "/test/8_NegativeTest_Post.js",
@@ -690,7 +690,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "24ee80f7-58b9-4a1c-9af6-d10a9544ccae",
+              "uuid": "70d0b379-8aa2-4a4e-9ad2-c9f5384ee75e",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/8_NegativeTest_Post.js",
               "file": "/test/8_NegativeTest_Post.js",
@@ -701,7 +701,7 @@
                   "title": "Post - Create a user without token",
                   "fullTitle": "Negative Tests suite  Post - Create a user without token",
                   "timedOut": false,
-                  "duration": 730,
+                  "duration": 755,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -710,8 +710,8 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "39fa3d78-a9dd-47e9-b0b0-894a6fb0b869",
-                  "parentUUID": "24ee80f7-58b9-4a1c-9af6-d10a9544ccae",
+                  "uuid": "9eec6a73-40c9-4b71-a16f-15b96642b8a2",
+                  "parentUUID": "70d0b379-8aa2-4a4e-9ad2-c9f5384ee75e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -719,7 +719,7 @@
                   "title": "Post - Create a user without body",
                   "fullTitle": "Negative Tests suite  Post - Create a user without body",
                   "timedOut": false,
-                  "duration": 760,
+                  "duration": 835,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -728,21 +728,21 @@
                   "context": null,
                   "code": "var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); });",
                   "err": {},
-                  "uuid": "356e4f34-530f-4d67-8864-fb1a8b031310",
-                  "parentUUID": "24ee80f7-58b9-4a1c-9af6-d10a9544ccae",
+                  "uuid": "0bb547b3-7272-4c3c-a407-af56cfd5c23d",
+                  "parentUUID": "70d0b379-8aa2-4a4e-9ad2-c9f5384ee75e",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "39fa3d78-a9dd-47e9-b0b0-894a6fb0b869",
-                "356e4f34-530f-4d67-8864-fb1a8b031310"
+                "9eec6a73-40c9-4b71-a16f-15b96642b8a2",
+                "0bb547b3-7272-4c3c-a407-af56cfd5c23d"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 1490,
+              "duration": 1590,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
@@ -758,7 +758,7 @@
           "_timeout": 5000
         },
         {
-          "uuid": "85850b13-3cf8-4932-b7cc-48f8739c7caf",
+          "uuid": "9ff8fd53-08ed-41d8-97fd-79bed7f8d456",
           "title": "Config changes -  suite",
           "fullFile": "/home/runner/work/supertest-project/supertest-project/test/9_ConfigChanges.js",
           "file": "/test/9_ConfigChanges.js",
@@ -767,7 +767,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "31a8d776-f2ce-4cf2-bd46-f5728eb575cb",
+              "uuid": "4b47938e-95d1-49b4-bb14-da8b3551c828",
               "title": "",
               "fullFile": "/home/runner/work/supertest-project/supertest-project/test/9_ConfigChanges.js",
               "file": "/test/9_ConfigChanges.js",
@@ -778,7 +778,7 @@
                   "title": "Common Config example - Create a user",
                   "fullTitle": "Config changes -  suite  Common Config example - Create a user",
                   "timedOut": false,
-                  "duration": 834,
+                  "duration": 856,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -787,20 +787,20 @@
                   "context": null,
                   "code": "var email = _faker.faker.internet.email();\nvar data = {\n  email: email,\n  name: _faker.faker.internet.userName(),\n  gender: 'male',\n  status: 'inactive'\n};\nreturn _common[\"default\"].post('/users').set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  // console.log(res.body);\n  (0, _chai.expect)(res.body.data.email).to.eq(email);\n  (0, _chai.expect)(res.body.data.status).to.eq('inactive');\n  (0, _chai.expect)(res.body.data.gender).to.eq('male');\n  // expect(res.body.data.id).to.equal(4108);\n  // data.email = \"invalid\";\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
                   "err": {},
-                  "uuid": "e1d13467-afb0-40d3-a9e0-0899a6b82f6f",
-                  "parentUUID": "31a8d776-f2ce-4cf2-bd46-f5728eb575cb",
+                  "uuid": "5ba90a65-99c6-4e80-960b-cc1633e56aa6",
+                  "parentUUID": "4b47938e-95d1-49b4-bb14-da8b3551c828",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e1d13467-afb0-40d3-a9e0-0899a6b82f6f"
+                "5ba90a65-99c6-4e80-960b-cc1633e56aa6"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 834,
+              "duration": 856,
               "root": false,
               "rootEmpty": false,
               "_timeout": 5000
